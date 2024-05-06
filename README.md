@@ -1,11 +1,11 @@
 # AzureMachineLearning
 
-#Intent
+# Intent
 This sample script can be used to create a new compute instance in AML.
 
 This new instance will be provisoned with a new kernel which can be used in AML.
 
-#Script analysis (setup.sh):
+# Script analysis (setup.sh):
 
 sudo -u azureuser -i <<'EOF'
 If the script is doing something specific to azureuser such as installing conda environment or Jupyter kernel, you'll have to put it within sudo -u azureuser.
@@ -32,7 +32,7 @@ Install the ipython kernel to be used in the AML instance.
 conda deactivate
 EOF
 
-#Importing requirementsfile
+# Importing requirementsfile
 For recreating / cloning environments, datascientists use the pip freeze command to summup a list of python packages with versions from the running AML instance. This file can be used to recreate a new or clone an environment.
 
 Wiki: https://dev.azure.com/CloudCompetenceCenter/AnalyseSuite/_wiki/wikis/Analyse-Suite.wiki/12235/Setup-script-to-provision-compute-instances
