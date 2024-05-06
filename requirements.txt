@@ -1,0 +1,4 @@
+azureml-core
+requests
+psycopg2
+azure.ai.ml
