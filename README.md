@@ -1,6 +1,6 @@
 # AzureMachineLearning
 
-# Introduction
+## Introduction
 
 Welcome to our example code repository for Azure Machine Learning.
 This repository is created for all our customers working on Azure Machine Learning environments.
@@ -13,7 +13,7 @@ pip install -r requirements.txt
 
 Note that (as of Nov 16th, 2022) the `requirements.txt` may not be complete.
 
-# Content
+## Content
 
 Subjects with a checkmark have been placed in this repository and are fully tested.
 
@@ -41,3 +41,13 @@ Subjects with a checkmark have been placed in this repository and are fully test
 3. Azure ML CLI examples that will enable the above - &#x2610;
 
 Please contact us if you have interesting user-flows we can use as an example in this repository.
+
+Import notes, please never add the following items to our repository:
+
+- secrets
+- tokens
+- subscription id's
+- usernames
+- resources groups
+- ip adresses
+- workspacename
