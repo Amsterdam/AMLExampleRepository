@@ -1,0 +1,19 @@
+## Add example into repo
+from azureml.core import Workspace, Datastore, Dataset 
+import pandas as pd 
+
+# Load your AML workspace 
+workspace = Workspace.from_config() 
+
+# Specify the name of the Datastore you created 
+datastore_name = 'namedatastore' 
+
+# Get the Datastore 
+datastore = Datastore.get(workspace, datastore_name) 
+
+# Specify the path to the data asset within the Datastore 
+data_asset_path = 'datastore URI of the datafile you want to consume'  
+
+df = pd.read_csv(data_asset_path) 
+
+df.head()
