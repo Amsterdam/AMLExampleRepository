@@ -12,9 +12,9 @@ or DockerFile
 """
 
 #Enter details of your AzureML workspace
-subscription_id = 'xxxxxxxxxx'
-resource_group = 'as-aml-x-rg'
-workspace = 'as-weu-aml-x-xxxxxxxx'
+subscription_id = '<SUBSCRIPTION_ID>'
+resource_group = '<RESOURCEGROUP_NAME>'
+workspace_name = '<AML_WORKSPACE_NAME>'
 
 #connect to the workspace
 ml_client = MLClient(DefaultAzureCredential(), subscription_id, resource_group, workspace)

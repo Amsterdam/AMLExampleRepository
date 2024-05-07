@@ -7,7 +7,7 @@
 
 # Cell 1
 library(azuremlsdk)
-ws = get_workspace("xxxx-weu-aml-o-xxx", resource_group = "xxx-aml-x-rg", subscription_id = "xxxxx-xxxxx-")
+ws = get_workspace("<AML_WORKSPACE_NAME>", resource_group = "<RESOURCE_GROUP>", subscription_id = "<SUBSCRIPTION_ID>")
 ds = get_dataset_by_name(ws, "datasetname", version = "1")
 load_dataset_into_data_frame(ds)
 

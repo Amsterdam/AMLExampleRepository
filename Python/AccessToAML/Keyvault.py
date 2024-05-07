@@ -6,7 +6,7 @@ from azureml.core.authentication import MsiAuthentication
 keyVaultName = "as-platform-weu-x-x"
 KVUri = f"https://as-platform-weu-x-xxxxx.vault.azure.net/"
 secretName = "secretname"
-secretValue = "t3stp4ss"
+secretValue = "secretvalue"
 
 # credential = DefaultAzureCredential(managed_identity_client_id="xxxxx")
 credential = DefaultAzureCredential(workspaceId="xxxxxxxxxxxx")

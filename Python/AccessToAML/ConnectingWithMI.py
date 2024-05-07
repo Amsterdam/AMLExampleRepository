@@ -7,9 +7,9 @@ from azure.identity import DefaultAzureCredential
 from azure.ai.ml.entities import Environment, BuildContext
 
 #Enter details of your AzureML workspace
-subscription_id = 'xx-xxx-xxxx-xxxx'
-resource_group = 'as-aml-x-rg'
-workspace = 'as-weu-aml-x-xxxxx'
+subscription_id = '<SUBSCRIPTION_ID>'
+resource_group = '<RESOURCEGROUP_NAME>'
+workspace_name = '<AML_WORKSPACE_NAME>'
 msi_auth = MsiAuthentication()
 
 # #connect to the workspace
