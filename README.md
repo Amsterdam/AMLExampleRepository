@@ -13,6 +13,24 @@ pip install -r requirements.txt
 
 Note that (as of Nov 16th, 2022) the `requirements.txt` may not be complete.
 
+## Contributing to this repository
+
+The intend of this repository is to promote collaboration between the Datascientists and the AML DevOps engineers. These code snippets can be used in notebooks (local with VSCode or AML notebooks).
+Using this repository requires a certain workflow.
+
+### Submit sample code to the repository
+
+- If you use this repository for the first time than please clone the repository to your (local) environment
+- When repository is already cloned in your evvironment, please pull the latest version of the repository by submitting the git pull command on the main branch
+- Use your favorite GUI for submitting the code to this repository
+- Create a new branch in this repository
+- Make the code adjustment or insert the new code examples
+- Make sure you don't push code containing secrets or other sensitive data
+- Commit and push the code to the repository
+- Your GUI will ask if you want to create a pull request or go to the Github repoitory page and create the PR
+- This PR will be peer reviewed by the DevOps team of AIDA
+- After review the PR will be merged in to the main branch
+
 ## Content
 
 Subjects with a checkmark have been placed in this repository and are fully tested.

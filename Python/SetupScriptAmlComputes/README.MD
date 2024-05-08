@@ -1,9 +1,9 @@
-#Intent
+# Intent
 This sample script can be used to create a new compute instance in AML.
 
 This new instance will be provisoned with a new kernel which can be used in AML.
 
-#Script analysis (setup.sh):
+# Script analysis (setup.sh):
 
 sudo -u azureuser -i <<'EOF'
 If the script is doing something specific to azureuser such as installing conda environment or Jupyter kernel, you'll have to put it within sudo -u azureuser.
