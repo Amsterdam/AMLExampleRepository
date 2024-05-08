@@ -3,8 +3,8 @@ from azure.keyvault.secrets import SecretClient
 from azure.identity import DefaultAzureCredential
 from azureml.core.authentication import MsiAuthentication
 
-keyVaultName = "as-platform-weu-x-x"
-KVUri = f"https://as-platform-weu-x-xxxxx.vault.azure.net/"
+keyVaultName = "<KEYVAULTNAME>"
+KVUri = f"https://<KEYVAULT URI>.vault.azure.net/"
 secretName = "secretname"
 secretValue = "secretvalue"
 

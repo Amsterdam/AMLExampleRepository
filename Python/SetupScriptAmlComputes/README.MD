@@ -32,5 +32,3 @@ EOF
 
 #Importing requirementsfile
 For recreating / cloning environments, datascientists use the pip freeze command to summup a list of python packages with versions from the running AML instance. This file can be used to recreate a new or clone an environment.
-
-Wiki: https://dev.azure.com/CloudCompetenceCenter/AnalyseSuite/_wiki/wikis/Analyse-Suite.wiki/12235/Setup-script-to-provision-compute-instances
