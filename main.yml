@@ -1,0 +1,19 @@
+trigger: 
+- main # Trigger on main
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+    #preventing git shallow clone
+    Agent.Source.Git.ShallowFetchDepth: 0  
+
+jobs:
+- job:
+  displayName: Code versioning and release note creation
+  steps:
+    - template: .azuredevops/GitVersion/pipelines/versioning-steps.yml
+    - template: .azuredevops/ReleaseNotes/pipelines/release-notes-steps.yml
+      parameters:
+        destinationPath: 'Wiki/Release-Notes'
+        version: $(GitVersion.SemVer)

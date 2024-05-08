@@ -1,0 +1,35 @@
+# Training a model
+
+These example training scripts will train a model using diabetes.csv.
+This dataset can be downloaded from https://www.kaggle.com/
+
+This file is also avaiable in the folder: /TrainWorkflow/demo/diabetes.csv
+
+Datastore and dataset can be create with the code examples in script 5 & 6, but they also can be manually uploaded using the Azure Machine Learing Portal (ml.azure.com).
+
+Script 1 to 8 can be run by using python from the commandline, for example:
+
+python3.8 1_set_config.py
+
+Before running these scripts you must use az login and set the correct subscription.
+
+You can create a local venv for runnig this experiment.
+
+ python3.8 -m venv ~/venv
+ source ~/venv/bin/activate
+
+ than install the required packages from the folder /TrainWorkflow/requirements.txt
+
+ ~/venv/bin/pip install -r ~/requirements.txt
+
+Now you are ready to run the scripts.
+
+```
+python3.8 1_set_config.py 
+python3.8 2_get_workspace.py 
+python3.8 3_create_compute.py 
+python3.8 4_create_experiment.py
+python3.8 5_create_datastore.py 
+python3.8 6_create_dataset.py
+python3.8 7_train_model.py 
+```

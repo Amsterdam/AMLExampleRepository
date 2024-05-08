@@ -1,0 +1,13 @@
+trigger: none # Disable CI trigger
+
+pool:
+  vmImage: 'ubuntu-latest' # requires macos or ubuntu (windows is not supported)
+
+steps:
+- task: dependabot@1
+  inputs:
+    useConfigFile: true
+    # directory: /PackageManagement
+    # packageManager: pip
+    # extraEnvironmentVariables: EXCON_DEBUG=1
+    # targetBranch: ${{ parameters.targetBranch }}
